@@ -1,0 +1,386 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sat Jul  1 11:47:36 2023
+| Host         : DESKTOP-5FEH4HR running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_SNN_control_sets_placed.rpt
+| Design       : top_SNN
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   308 |
+|    Minimum number of control sets                        |   308 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    32 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   308 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |   100 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |   204 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             104 |           82 |
+| No           | No                    | Yes                    |             129 |          109 |
+| No           | Yes                   | No                     |               1 |            1 |
+| Yes          | No                    | No                     |              31 |            9 |
+| Yes          | No                    | Yes                    |            5600 |         1875 |
+| Yes          | Yes                   | No                     |              31 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------+--------------------------------------------------------------+-------------------------+------------------+----------------+--------------+
+|                     Clock Signal                    |                         Enable Signal                        |     Set/Reset Signal    | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------------------+--------------------------------------------------------------+-------------------------+------------------+----------------+--------------+
+|  SCL/NEURON_GEN[76].Neuron_Instance/spike_out_reg_1 |                                                              | rst_IBUF                |                1 |              1 |         1.00 |
+|  enable_winner_reg/G0                               |                                                              |                         |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                      |                                                              |                         |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[57].Neuron_Instance/spike_out_i_1__57_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[74].Neuron_Instance/spike_out_req_i_1__6_n_1  | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[58].Neuron_Instance/spike_out_i_1__58_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[11].Neuron_Instance/spike_out_i_1__10_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[75].Neuron_Instance/spike_out_req_i_1__7_n_1  | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[1].Neuron_Instance/spike_out_i_1__0_n_1       | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[59].Neuron_Instance/spike_out_i_1__59_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[20].Neuron_Instance/spike_out_i_1__19_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[76].Neuron_Instance/spike_out_req_i_1__8_n_1  | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[33].Neuron_Instance/spike_out_i_1__33_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[5].Neuron_Instance/spike_out_i_1__4_n_1       | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[31].Neuron_Instance/spike_out_i_1__31_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[77].Neuron_Instance/spike_out_req_i_2_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[32].Neuron_Instance/spike_out_i_1__32_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[78].Neuron_Instance/spike_out_req_i_1__11_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[60].Neuron_Instance/spike_out_i_1__60_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[2].Neuron_Instance/spike_out_i_1__1_n_1       | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[61].Neuron_Instance/spike_out_i_1__61_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[30].Neuron_Instance/spike_out_i_1__30_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[29].Neuron_Instance/sel__0                    | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[7].Neuron_Instance/spike_out_i_1__6_n_1       | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[28].Neuron_Instance/spike_out_i_1__28_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[79].Neuron_Instance/spike_out_req_i_1__12_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[12].Neuron_Instance/spike_out_i_1__11_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[62].Neuron_Instance/spike_out_i_1__62_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[25].Neuron_Instance/spike_out_i_1__25_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[17].Neuron_Instance/spike_out_i_1__16_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[26].Neuron_Instance/spike_out_i_1__26_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[80].Neuron_Instance/spike_out_req_i_1__13_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[27].Neuron_Instance/spike_out_i_1__27_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[63].Neuron_Instance/spike_out_i_1__63_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[81].Neuron_Instance/spike_out_req_i_1__14_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[23].Neuron_Instance/spike_out_i_1__23_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[82].Neuron_Instance/spike_out_req_i_1__15_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[24].Neuron_Instance/spike_out_i_1__24_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[36].Neuron_Instance/spike_out_i_1__36_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[14].Neuron_Instance/spike_out_i_1__13_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[37].Neuron_Instance/sel__1                    | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[64].Neuron_Instance/spike_out_i_1__64_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[13].Neuron_Instance/spike_out_i_1__12_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[18].Neuron_Instance/spike_out_i_1__17_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[34].Neuron_Instance/spike_out_i_1__34_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[16].Neuron_Instance/spike_out_i_1__15_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[35].Neuron_Instance/spike_out_i_1__35_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[85].Neuron_Instance/sel__5                    | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[84].Neuron_Instance/spike_out_req_i_1__17_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[10].Neuron_Instance/spike_out_i_1__9_n_1      | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[65].Neuron_Instance/spike_out_i_1__65_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[0].Neuron_Instance/sel                        | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[86].Neuron_Instance/spike_out_req_i_1__19_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[21].Neuron_Instance/spike_out_i_1__20_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/spike_out_req_i_1__20_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[22].Neuron_Instance/spike_out_i_1__21_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[66].Neuron_Instance/spike_out_i_1__66_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[38].Neuron_Instance/spike_out_i_1__38_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[88].Neuron_Instance/spike_out_req_i_1__21_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[39].Neuron_Instance/spike_out_i_1__39_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[89].Neuron_Instance/spike_out_req_i_1__22_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[3].Neuron_Instance/spike_out_i_1__2_n_1       | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[67].Neuron_Instance/spike_out_i_1__67_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[40].Neuron_Instance/spike_out_i_1__40_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[8].Neuron_Instance/spike_out_i_1__7_n_1       | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[41].Neuron_Instance/spike_out_i_1__41_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[90].Neuron_Instance/spike_out_req_i_1__23_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[42].Neuron_Instance/spike_out_i_1__42_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[68].Neuron_Instance/spike_out_req_i_1__0_n_1  | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[43].Neuron_Instance/spike_out_i_1__43_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[91].Neuron_Instance/spike_out_req_i_1__24_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[44].Neuron_Instance/spike_out_i_1__44_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[19].Neuron_Instance/spike_out_i_1__18_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[45].Neuron_Instance/sel__2                    | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[69].Neuron_Instance/sel__4                    | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[46].Neuron_Instance/spike_out_i_1__46_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[92].Neuron_Instance/spike_out_req_i_1__25_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[93].Neuron_Instance/spike_out_req_i_1__26_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[6].Neuron_Instance/spike_out_i_1__5_n_1       | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[47].Neuron_Instance/spike_out_i_1__47_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[94].Neuron_Instance/spike_out_req_i_1__27_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[48].Neuron_Instance/spike_out_i_1__48_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[70].Neuron_Instance/spike_out_req_i_1__2_n_1  | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[4].Neuron_Instance/spike_out_i_1__3_n_1       | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[95].Neuron_Instance/spike_out_req_i_1__28_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[96].Neuron_Instance/spike_out_req_i_1__29_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[49].Neuron_Instance/spike_out_i_1__49_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[50].Neuron_Instance/spike_out_i_1__50_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[71].Neuron_Instance/spike_out_req_i_1__3_n_1  | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[51].Neuron_Instance/spike_out_i_1__51_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[97].Neuron_Instance/spike_out_req_i_1__30_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[52].Neuron_Instance/spike_out_i_1__52_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[98].Neuron_Instance/spike_out_req_i_1__10_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[72].Neuron_Instance/spike_out_req_i_1__4_n_1  | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[53].Neuron_Instance/spike_out_i_1__53_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[54].Neuron_Instance/spike_out_i_1__54_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[99].Neuron_Instance/spike_out_i_1__22_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[55].Neuron_Instance/spike_out_i_1__55_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[9].Neuron_Instance/spike_out_i_1__8_n_1       | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[15].Neuron_Instance/spike_out_i_1__14_n_1     | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[73].Neuron_Instance/spike_out_req_i_1__5_n_1  | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[56].Neuron_Instance/sel__3                    | rst_IBUF                |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[83].Neuron_Instance/spike_out_req_i_1__16_n_1 | rst_IBUF                |                2 |              8 |         4.00 |
+|  INL/clr_reg_n_1                                    |                                                              | rst_IBUF                |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[77].Neuron_Instance/acc[23]_i_1__68_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[89].Neuron_Instance/p[23]_i_1__90_n_1         | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[1].Neuron_Instance/acc[23]_i_1__0_n_1         | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[20].Neuron_Instance/acc[23]_i_1__19_n_1       | rst_IBUF                |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[11].Neuron_Instance/acc[23]_i_1__10_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[31].Neuron_Instance/acc[23]_i_1__31_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[32].Neuron_Instance/acc[23]_i_1__32_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[33].Neuron_Instance/acc[23]_i_1__33_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[2].Neuron_Instance/acc[23]_i_1__1_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[30].Neuron_Instance/acc[23]_i_1__30_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[28].Neuron_Instance/acc[23]_i_1__28_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[12].Neuron_Instance/acc[23]_i_1__11_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[29].Neuron_Instance/acc[23]_i_1__29_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[26].Neuron_Instance/acc[23]_i_1__26_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[27].Neuron_Instance/acc[23]_i_1__27_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[25].Neuron_Instance/acc[23]_i_1__25_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[23].Neuron_Instance/acc[23]_i_1__23_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[24].Neuron_Instance/acc[23]_i_1__24_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[13].Neuron_Instance/acc[23]_i_1__12_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[34].Neuron_Instance/acc[23]_i_1__34_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[35].Neuron_Instance/acc[23]_i_1__35_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[36].Neuron_Instance/acc[23]_i_1__36_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[10].Neuron_Instance/acc[23]_i_1__9_n_1        | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[0].Neuron_Instance/acc[23]_i_1_n_1            | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[21].Neuron_Instance/acc[23]_i_1__20_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[22].Neuron_Instance/acc[23]_i_1__21_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[38].Neuron_Instance/acc[23]_i_1__38_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[39].Neuron_Instance/acc[23]_i_1__39_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[3].Neuron_Instance/acc[23]_i_1__2_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[40].Neuron_Instance/acc[23]_i_1__40_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[41].Neuron_Instance/acc[23]_i_1__41_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[42].Neuron_Instance/acc[23]_i_1__42_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[43].Neuron_Instance/acc[23]_i_1__43_n_1       | rst_IBUF                |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[44].Neuron_Instance/acc[23]_i_1__44_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[45].Neuron_Instance/acc[23]_i_1__45_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[46].Neuron_Instance/acc[23]_i_1__46_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[14].Neuron_Instance/acc[23]_i_1__13_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[37].Neuron_Instance/acc[23]_i_1__37_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[47].Neuron_Instance/acc[23]_i_1__47_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[48].Neuron_Instance/acc[23]_i_1__48_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[4].Neuron_Instance/acc[23]_i_1__3_n_1         | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[50].Neuron_Instance/acc[23]_i_1__50_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[49].Neuron_Instance/acc[23]_i_1__49_n_1       | rst_IBUF                |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[51].Neuron_Instance/acc[23]_i_1__51_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[52].Neuron_Instance/acc[23]_i_1__52_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[54].Neuron_Instance/acc[23]_i_1__54_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[53].Neuron_Instance/acc[23]_i_1__53_n_1       | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[55].Neuron_Instance/acc[23]_i_1__55_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[15].Neuron_Instance/acc[23]_i_1__14_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[56].Neuron_Instance/acc[23]_i_1__56_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[57].Neuron_Instance/acc[23]_i_1__57_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[58].Neuron_Instance/acc[23]_i_1__58_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[59].Neuron_Instance/acc[23]_i_1__59_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[5].Neuron_Instance/acc[23]_i_1__4_n_1         | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[61].Neuron_Instance/acc[23]_i_1__61_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[60].Neuron_Instance/acc[23]_i_1__60_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[62].Neuron_Instance/acc[23]_i_1__62_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[62].Neuron_Instance/p[23]_i_1__62_n_1         | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[63].Neuron_Instance/p[23]_i_1__63_n_1         | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[64].Neuron_Instance/acc[23]_i_1__64_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[64].Neuron_Instance/p[23]_i_1__64_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[16].Neuron_Instance/acc[23]_i_1__15_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[65].Neuron_Instance/acc[23]_i_1__65_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[65].Neuron_Instance/p[23]_i_1__65_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[66].Neuron_Instance/acc[23]_i_1__66_n_1       | rst_IBUF                |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[66].Neuron_Instance/p[23]_i_1__66_n_1         | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[67].Neuron_Instance/acc[23]_i_1__67_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[67].Neuron_Instance/p[23]_i_1__67_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[68].Neuron_Instance/acc[23]_i_1__69_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[68].Neuron_Instance/p[23]_i_1__69_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[69].Neuron_Instance/acc[23]_i_1__70_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[69].Neuron_Instance/p[23]_i_1__70_n_1         | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[6].Neuron_Instance/acc[23]_i_1__5_n_1         | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[70].Neuron_Instance/p[23]_i_1__71_n_1         | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[70].Neuron_Instance/acc[23]_i_1__71_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[71].Neuron_Instance/acc[23]_i_1__72_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[71].Neuron_Instance/p[23]_i_1__72_n_1         | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[72].Neuron_Instance/acc[23]_i_1__73_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[72].Neuron_Instance/p[23]_i_1__73_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[17].Neuron_Instance/acc[23]_i_1__16_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[73].Neuron_Instance/acc[23]_i_1__74_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[18].Neuron_Instance/acc[23]_i_1__17_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[77].Neuron_Instance/p[23]_i_1__68_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[83].Neuron_Instance/acc[23]_i_1__84_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[83].Neuron_Instance/p[23]_i_1__84_n_1         | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[85].Neuron_Instance/acc[23]_i_1__86_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[85].Neuron_Instance/p[23]_i_1__86_n_1         | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[75].Neuron_Instance/acc[23]_i_1__76_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[63].Neuron_Instance/acc[23]_i_1__63_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[84].Neuron_Instance/acc[23]_i_1__85_n_1       | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[84].Neuron_Instance/p[23]_i_1__85_n_1         | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[78].Neuron_Instance/acc[23]_i_1__79_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[86].Neuron_Instance/acc[23]_i_1__87_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[86].Neuron_Instance/p[23]_i_1__87_n_1         | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[78].Neuron_Instance/p[23]_i_1__79_n_1         | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/acc[23]_i_1__88_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/p[23]_i_1__88_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[75].Neuron_Instance/p[23]_i_1__76_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/E[0]                      | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start[0]                  | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_1[0]                | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_10[0]               | rst_IBUF                |               11 |             24 |         2.18 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_13[0]               | rst_IBUF                |               11 |             24 |         2.18 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_15[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_17[0]               | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_18[0]               | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_19[0]               | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_2[0]                | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_16[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_20[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_21[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_22[0]               | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_23[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_0[0]                | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_11[0]               | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_12[0]               | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_14[0]               | rst_IBUF                |               12 |             24 |         2.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_49[0]               | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_25[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_34[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_37[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_59[0]               | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_27[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_6[0]                | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_54[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_39[0]               | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_7[0]                | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[73].Neuron_Instance/p[23]_i_1__74_n_1         | rst_IBUF                |               11 |             24 |         2.18 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_42[0]               | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_28[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_35[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_56[0]               | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_45[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_46[0]               | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_50[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_52[0]               | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_26[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_36[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_43[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_5[0]                | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_31[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_51[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_53[0]               | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_32[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_55[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_58[0]               | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_30[0]               | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_57[0]               | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_33[0]               | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_9[0]                | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_3[0]                | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_60[0]               | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_38[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_40[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_48[0]               | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_24[0]               | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_4[0]                | rst_IBUF                |               12 |             24 |         2.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_41[0]               | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_44[0]               | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_29[0]               | rst_IBUF                |               11 |             24 |         2.18 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_47[0]               | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[88].Neuron_Instance/acc[23]_i_1__89_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[88].Neuron_Instance/p[23]_i_1__89_n_1         | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[79].Neuron_Instance/acc[23]_i_1__80_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[89].Neuron_Instance/acc[23]_i_1__90_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[87].Neuron_Instance/start_8[0]                | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[74].Neuron_Instance/p[23]_i_1__75_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[8].Neuron_Instance/acc[23]_i_1__7_n_1         | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[79].Neuron_Instance/p[23]_i_1__80_n_1         | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[90].Neuron_Instance/acc[23]_i_1__91_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[90].Neuron_Instance/p[23]_i_1__91_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[76].Neuron_Instance/acc[23]_i_1__77_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[91].Neuron_Instance/acc[23]_i_1__92_n_1       | rst_IBUF                |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[91].Neuron_Instance/p[23]_i_1__92_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[19].Neuron_Instance/acc[23]_i_1__18_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[7].Neuron_Instance/acc[23]_i_1__6_n_1         | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[92].Neuron_Instance/acc[23]_i_1__93_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[92].Neuron_Instance/p[23]_i_1__93_n_1         | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[80].Neuron_Instance/acc[23]_i_1__81_n_1       | rst_IBUF                |               11 |             24 |         2.18 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[93].Neuron_Instance/acc[23]_i_1__94_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[93].Neuron_Instance/p[23]_i_1__94_n_1         | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[80].Neuron_Instance/p[23]_i_1__81_n_1         | rst_IBUF                |               10 |             24 |         2.40 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[94].Neuron_Instance/acc[23]_i_1__95_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[94].Neuron_Instance/p[23]_i_1__95_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[76].Neuron_Instance/p[23]_i_1__77_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[95].Neuron_Instance/acc[23]_i_1__96_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[95].Neuron_Instance/p[23]_i_1__96_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[81].Neuron_Instance/acc[23]_i_1__82_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[96].Neuron_Instance/acc[23]_i_1__97_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[96].Neuron_Instance/p[23]_i_1__97_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[81].Neuron_Instance/p[23]_i_1__82_n_1         | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[97].Neuron_Instance/acc[23]_i_1__98_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[97].Neuron_Instance/p[23]_i_1__98_n_1         | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[74].Neuron_Instance/acc[23]_i_1__75_n_1       | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[98].Neuron_Instance/acc[23]_i_1__78_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[98].Neuron_Instance/p[23]_i_1__78_n_1         | rst_IBUF                |                9 |             24 |         2.67 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[82].Neuron_Instance/acc[23]_i_1__83_n_1       | rst_IBUF                |                8 |             24 |         3.00 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[99].Neuron_Instance/acc[23]_i_1__22_n_1       | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[82].Neuron_Instance/p[23]_i_1__83_n_1         | rst_IBUF                |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[9].Neuron_Instance/acc[23]_i_1__8_n_1         | rst_IBUF                |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG                                      | INL/counter[31]_i_2_n_1                                      | INL/counter[31]_i_1_n_1 |                8 |             31 |         3.88 |
+|  clk_IBUF_BUFG                                      | SCL/NEURON_GEN[79].Neuron_Instance/rst                       |                         |                9 |             31 |         3.44 |
+|  n_0_3579_BUFG                                      |                                                              |                         |               79 |            100 |         1.27 |
+|  clk_IBUF_BUFG                                      |                                                              | rst_IBUF                |              106 |            119 |         1.12 |
++-----------------------------------------------------+--------------------------------------------------------------+-------------------------+------------------+----------------+--------------+
+
+

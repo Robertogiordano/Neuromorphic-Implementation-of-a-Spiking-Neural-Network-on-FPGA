@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="input_neuron_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="input_neuron_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="221.800001 us"></ZoomEndTime>
+      <Cursor1Time time="62.710000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="194"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/input_neuron_tb/time_period" type="array">
+      <obj_property name="ElementShortName">time_period[8:0]</obj_property>
+      <obj_property name="ObjectShortName">time_period[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_neuron_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_neuron_tb/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_neuron_tb/time_step" type="logic">
+      <obj_property name="ElementShortName">time_step</obj_property>
+      <obj_property name="ObjectShortName">time_step</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_neuron_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_neuron_tb/spike" type="logic">
+      <obj_property name="ElementShortName">spike</obj_property>
+      <obj_property name="ObjectShortName">spike</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_neuron_tb/spike2" type="logic">
+      <obj_property name="ElementShortName">spike2</obj_property>
+      <obj_property name="ObjectShortName">spike2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_neuron_tb/UUT/count" type="array">
+      <obj_property name="ElementShortName">count[8:0]</obj_property>
+      <obj_property name="ObjectShortName">count[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_neuron_tb/UUT2/count" type="array">
+      <obj_property name="ElementShortName">count[8:0]</obj_property>
+      <obj_property name="ObjectShortName">count[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

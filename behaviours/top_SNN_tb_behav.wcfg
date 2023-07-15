@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_SNN_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="top_SNN_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="159,901.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="160,068.001 ns"></ZoomEndTime>
+      <Cursor1Time time="160,040.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="138"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/top_SNN_tb/UUT/enable_winner" type="logic">
+      <obj_property name="ElementShortName">enable_winner</obj_property>
+      <obj_property name="ObjectShortName">enable_winner</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/average" type="other">
+      <obj_property name="ElementShortName">average</obj_property>
+      <obj_property name="ObjectShortName">average</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/UUT/INL/i" type="other">
+      <obj_property name="ElementShortName">i</obj_property>
+      <obj_property name="ObjectShortName">i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/counter" type="other">
+      <obj_property name="ElementShortName">counter</obj_property>
+      <obj_property name="ObjectShortName">counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/UUT/SCL/allow_spike" type="logic">
+      <obj_property name="ElementShortName">allow_spike</obj_property>
+      <obj_property name="ObjectShortName">allow_spike</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/UUT/INL/time_step" type="logic">
+      <obj_property name="ElementShortName">time_step</obj_property>
+      <obj_property name="ObjectShortName">time_step</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/rd" type="logic">
+      <obj_property name="ElementShortName">rd</obj_property>
+      <obj_property name="ObjectShortName">rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/UUT/INL/periods" type="array">
+      <obj_property name="ElementShortName">periods[0:783][8:0]</obj_property>
+      <obj_property name="ObjectShortName">periods[0:783][8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/winner" type="array">
+      <obj_property name="ElementShortName">winner[3:0]</obj_property>
+      <obj_property name="ObjectShortName">winner[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/NEURONS_INPUT_LAYER" type="other">
+      <obj_property name="ElementShortName">NEURONS_INPUT_LAYER</obj_property>
+      <obj_property name="ObjectShortName">NEURONS_INPUT_LAYER</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/NEURONS_SECOND_LAYER" type="other">
+      <obj_property name="ElementShortName">NEURONS_SECOND_LAYER</obj_property>
+      <obj_property name="ObjectShortName">NEURONS_SECOND_LAYER</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/UUT/SCL/spikes_out" type="array">
+      <obj_property name="ElementShortName">spikes_out[0:99]</obj_property>
+      <obj_property name="ObjectShortName">spikes_out[0:99]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/UUT/SCL/hyppol_array" type="array">
+      <obj_property name="ElementShortName">hyppol_array[0:99]</obj_property>
+      <obj_property name="ObjectShortName">hyppol_array[0:99]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/UUT/SCL/inhibit_array" type="array">
+      <obj_property name="ElementShortName">inhibit_array[0:99]</obj_property>
+      <obj_property name="ObjectShortName">inhibit_array[0:99]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_SNN_tb/UUT/SCL/fire_id" type="array">
+      <obj_property name="ElementShortName">fire_id[0:99]</obj_property>
+      <obj_property name="ObjectShortName">fire_id[0:99]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1834">
+      <obj_property name="label">NEURON 0 second layer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group1421" type="group">
+      <obj_property name="label">Neuron0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(0)\/Neuron_Instance/hide" type="logic">
+         <obj_property name="ElementShortName">hide</obj_property>
+         <obj_property name="ObjectShortName">hide</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(0)\/Neuron_Instance/p" type="array">
+         <obj_property name="ElementShortName">p[23:0]</obj_property>
+         <obj_property name="ObjectShortName">p[23:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">16</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(0)\/Neuron_Instance/act_wght" type="array">
+         <obj_property name="ElementShortName">act_wght[23:0]</obj_property>
+         <obj_property name="ObjectShortName">act_wght[23:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">16</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(0)\/Neuron_Instance/spike_in" type="logic">
+         <obj_property name="ElementShortName">spike_in</obj_property>
+         <obj_property name="ObjectShortName">spike_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(0)\/Neuron_Instance/spike_out" type="logic">
+         <obj_property name="ElementShortName">spike_out</obj_property>
+         <obj_property name="ObjectShortName">spike_out</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1835">
+      <obj_property name="label">NEURON 74 second layer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group1422" type="group">
+      <obj_property name="label">neuron74</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(74)\/Neuron_Instance/hide" type="logic">
+         <obj_property name="ElementShortName">hide</obj_property>
+         <obj_property name="ObjectShortName">hide</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(74)\/Neuron_Instance/inhibit" type="logic">
+         <obj_property name="ElementShortName">inhibit</obj_property>
+         <obj_property name="ObjectShortName">inhibit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(74)\/Neuron_Instance/p" type="array">
+         <obj_property name="ElementShortName">p[23:0]</obj_property>
+         <obj_property name="ObjectShortName">p[23:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">16</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(74)\/Neuron_Instance/act_wght" type="array">
+         <obj_property name="ElementShortName">act_wght[23:0]</obj_property>
+         <obj_property name="ObjectShortName">act_wght[23:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">16</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(74)\/Neuron_Instance/spike_in" type="logic">
+         <obj_property name="ElementShortName">spike_in</obj_property>
+         <obj_property name="ObjectShortName">spike_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(74)\/Neuron_Instance/spike_out" type="logic">
+         <obj_property name="ElementShortName">spike_out</obj_property>
+         <obj_property name="ObjectShortName">spike_out</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider881">
+      <obj_property name="label">NEURON 76 second layer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group1839" type="group">
+      <obj_property name="label">neuron 76</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(76)\/Neuron_Instance/hide" type="logic">
+         <obj_property name="ElementShortName">hide</obj_property>
+         <obj_property name="ObjectShortName">hide</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(76)\/Neuron_Instance/p" type="array">
+         <obj_property name="ElementShortName">p[23:0]</obj_property>
+         <obj_property name="ObjectShortName">p[23:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">16</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(76)\/Neuron_Instance/p_th" type="array">
+         <obj_property name="ElementShortName">p_th[23:0]</obj_property>
+         <obj_property name="ObjectShortName">p_th[23:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">16</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(76)\/Neuron_Instance/act_wght" type="array">
+         <obj_property name="ElementShortName">act_wght[23:0]</obj_property>
+         <obj_property name="ObjectShortName">act_wght[23:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">16</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(76)\/Neuron_Instance/spike_in" type="logic">
+         <obj_property name="ElementShortName">spike_in</obj_property>
+         <obj_property name="ObjectShortName">spike_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(76)\/Neuron_Instance/spike_out" type="logic">
+         <obj_property name="ElementShortName">spike_out</obj_property>
+         <obj_property name="ObjectShortName">spike_out</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1377">
+      <obj_property name="label">NEURON 49 second layer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group1840" type="group">
+      <obj_property name="label">neuron 49</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(49)\/Neuron_Instance/inhibit" type="logic">
+         <obj_property name="ElementShortName">inhibit</obj_property>
+         <obj_property name="ObjectShortName">inhibit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(49)\/Neuron_Instance/hide" type="logic">
+         <obj_property name="ElementShortName">hide</obj_property>
+         <obj_property name="ObjectShortName">hide</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(49)\/Neuron_Instance/p" type="array">
+         <obj_property name="ElementShortName">p[23:0]</obj_property>
+         <obj_property name="ObjectShortName">p[23:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">16</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(49)\/Neuron_Instance/p_th" type="array">
+         <obj_property name="ElementShortName">p_th[23:0]</obj_property>
+         <obj_property name="ObjectShortName">p_th[23:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">16</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(49)\/Neuron_Instance/act_wght" type="array">
+         <obj_property name="ElementShortName">act_wght[23:0]</obj_property>
+         <obj_property name="ObjectShortName">act_wght[23:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">16</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(49)\/Neuron_Instance/spike_in" type="logic">
+         <obj_property name="ElementShortName">spike_in</obj_property>
+         <obj_property name="ObjectShortName">spike_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_SNN_tb/UUT/SCL/\NEURON_GEN(49)\/Neuron_Instance/spike_out" type="logic">
+         <obj_property name="ElementShortName">spike_out</obj_property>
+         <obj_property name="ObjectShortName">spike_out</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

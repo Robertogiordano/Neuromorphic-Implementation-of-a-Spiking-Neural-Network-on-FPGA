@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="example_file_io_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="example_file_io_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
+      <Cursor1Time time="161.025 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="210"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/example_file_io_tb/r_ADD_TERM1" type="array">
+      <obj_property name="ElementShortName">r_ADD_TERM1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_ADD_TERM1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/example_file_io_tb/r_ADD_TERM2" type="array">
+      <obj_property name="ElementShortName">r_ADD_TERM2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_ADD_TERM2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/example_file_io_tb/tab" type="array">
+      <obj_property name="ElementShortName">tab[0:783][23:0]</obj_property>
+      <obj_property name="ObjectShortName">tab[0:783][23:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/example_file_io_tb/UUT/din" type="array">
+      <obj_property name="ElementShortName">din[23:0]</obj_property>
+      <obj_property name="ObjectShortName">din[23:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/example_file_io_tb/UUT/addr_write" type="array">
+      <obj_property name="ElementShortName">addr_write[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_write[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/example_file_io_tb/UUT/ram" type="array">
+      <obj_property name="ElementShortName">ram[0:783][23:0]</obj_property>
+      <obj_property name="ObjectShortName">ram[0:783][23:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+</wave_config>

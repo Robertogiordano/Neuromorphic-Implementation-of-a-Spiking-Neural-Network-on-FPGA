@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="input_layer_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="input_layer_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="31,367.234 ns"></ZoomStartTime>
+      <ZoomEndTime time="31,593.835 ns"></ZoomEndTime>
+      <Cursor1Time time="31,405.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="170"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/input_layer_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_layer_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_layer_tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_layer_tb/rd" type="logic">
+      <obj_property name="ElementShortName">rd</obj_property>
+      <obj_property name="ObjectShortName">rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_layer_tb/spike" type="logic">
+      <obj_property name="ElementShortName">spike</obj_property>
+      <obj_property name="ObjectShortName">spike</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_layer_tb/UUT/clr" type="logic">
+      <obj_property name="ElementShortName">clr</obj_property>
+      <obj_property name="ObjectShortName">clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_layer_tb/UUT/counter" type="other">
+      <obj_property name="ElementShortName">counter</obj_property>
+      <obj_property name="ObjectShortName">counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_layer_tb/UUT/time_step" type="logic">
+      <obj_property name="ElementShortName">time_step</obj_property>
+      <obj_property name="ObjectShortName">time_step</obj_property>
+   </wvobject>
+   <wvobject fp_name="/input_layer_tb/UUT/spikes" type="array">
+      <obj_property name="ElementShortName">spikes[0:783]</obj_property>
+      <obj_property name="ObjectShortName">spikes[0:783]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,619 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sat Jul  1 11:48:38 2023
+| Host         : DESKTOP-5FEH4HR running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_SNN_methodology_drc_routed.rpt -pb top_SNN_methodology_drc_routed.pb -rpx top_SNN_methodology_drc_routed.rpx
+| Design       : top_SNN
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 116
++-----------+------------------+--------------------------------+------------+
+| Rule      | Severity         | Description                    | Violations |
++-----------+------------------+--------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 10         |
+| LUTAR-1   | Warning          | LUT drives async reset alert   | 1          |
+| TIMING-18 | Warning          | Missing input or output delay  | 2          |
+| TIMING-20 | Warning          | Non-clocked latch              | 102        |
+| LATCH-1   | Advisory         | Existing latches in the design | 1          |
++-----------+------------------+--------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin INL/NEURON_GEN[0].Neuron_Input_Instance/count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin INL/NEURON_GEN[0].Neuron_Input_Instance/count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin INL/NEURON_GEN[0].Neuron_Input_Instance/count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin INL/NEURON_GEN[0].Neuron_Input_Instance/count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin INL/NEURON_GEN[0].Neuron_Input_Instance/count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin INL/NEURON_GEN[0].Neuron_Input_Instance/count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin INL/NEURON_GEN[0].Neuron_Input_Instance/count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin INL/NEURON_GEN[0].Neuron_Input_Instance/count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin INL/NEURON_GEN[0].Neuron_Input_Instance/count_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin INL/NEURON_GEN[0].Neuron_Input_Instance/spike_reg/C is not reached by a timing clock
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell SCL/NEURON_GEN[12].Neuron_Instance/enable_winner_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) enable_winner_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on rst relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on start relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[0] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[10] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[11] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[12] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[13] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[14] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[15] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[16] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[17] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[18] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[19] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[1] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[20] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[21] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[22] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[23] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[24] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[25] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[26] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[27] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[28] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[29] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[2] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[30] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[31] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[32] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[32]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[33] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[33]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[34] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[34]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[35] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[35]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[36] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[36]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[37] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[37]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[38] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[38]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[39] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[39]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[3] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[40] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[40]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[41] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[41]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[42] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[42]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[43] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[43]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[44] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[44]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[45] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[45]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[46] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[46]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[47] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[47]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[48] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[48]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[49] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[49]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[4] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[50] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[50]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[51] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[51]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[52] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[52]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[53] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[53]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[54] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[54]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[55] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[55]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[56] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[56]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[57] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[57]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[58] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[58]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[59] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[59]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[5] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[60] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[60]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[61] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[61]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[62] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[62]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[63] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[63]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[64] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[64]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[65] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[65]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[66] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[66]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[67] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[67]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[68] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[68]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[69] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[69]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[6] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[70] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[70]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[71] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[71]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[72] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[72]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[73] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[73]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[74] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[74]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[75] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[75]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[76] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[76]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[77] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[77]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[78] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[78]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#77 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[79] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[79]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#78 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[7] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#79 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[80] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[80]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#80 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[81] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[81]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#81 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[82] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[82]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#82 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[83] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[83]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#83 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[84] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[84]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#84 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[85] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[85]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#85 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[86] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[86]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#86 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[87] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[87]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#87 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[88] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[88]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#88 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[89] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[89]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#89 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[8] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#90 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[90] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[90]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#91 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[91] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[91]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#92 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[92] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[92]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#93 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[93] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[93]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#94 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[94] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[94]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#95 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[95] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[95]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#96 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[96] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[96]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#97 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[97] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[97]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#98 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[98] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[98]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#99 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[99] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[99]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#100 Warning
+Non-clocked latch  
+The latch SCL/inhibit_array_reg[9] cannot be properly analyzed as its control pin SCL/inhibit_array_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#101 Warning
+Non-clocked latch  
+The latch enable_winner_reg/L7 (in enable_winner_reg macro) cannot be properly analyzed as its control pin enable_winner_reg/L7/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#102 Warning
+Non-clocked latch  
+The latch winner_reg[3] cannot be properly analyzed as its control pin winner_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 102 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

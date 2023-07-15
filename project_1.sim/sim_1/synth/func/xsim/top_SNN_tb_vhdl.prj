@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"top_SNN_tb_func_synth.vhd" \
+"../../../../../project_1.srcs/sim_1/new/Neuron_TB.vhd" \
+"../../../../../project_1.srcs/sim_1/new/RAM_Block_TB.vhd" \
+"../../../../../project_1.srcs/sim_1/new/Second_Layer_TB.vhd" \
+"../../../../../project_1.srcs/sim_1/new/input_layer_tb.vhd" \
+"../../../../../project_1.srcs/sim_1/new/input_neuron_tb.vhd" \
+"../../../../../project_1.srcs/sim_1/new/interp_tb.vhd" \
+"../../../../../project_1.srcs/sim_1/new/pre_layer_tb.vhd" \
+"../../../../../project_1.srcs/sources_1/new/top_SNN_tb.vhd" \
+
+# Do not sort compile order
+nosort

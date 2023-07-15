@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt auto  -L xil_defaultlib -L secureip -L xpm --snapshot top_SNN_tb xil_defaultlib.top_SNN_tb -log elaborate.log

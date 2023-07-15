@@ -1,0 +1,13 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/rober/OneDrive/universita/anno2/tirocinio/fpga_implementation/project_1/project_1.sim/sim_1/synth/func/xsim/top_SNN_tb_func_synth.vhd,1688196529,vhdl,,,,input_layer;input_neuron;neuron;neuron_0;neuron_1;neuron_10;neuron_11;neuron_12;neuron_13;neuron_14;neuron_15;neuron_16;neuron_17;neuron_18;neuron_19;neuron_2;neuron_20;neuron_21;neuron_22;neuron_23;neuron_24;neuron_25;neuron_26;neuron_27;neuron_28;neuron_29;neuron_3;neuron_30;neuron_31;neuron_32;neuron_33;neuron_34;neuron_35;neuron_36;neuron_37;neuron_38;neuron_39;neuron_4;neuron_40;neuron_41;neuron_42;neuron_43;neuron_44;neuron_45;neuron_46;neuron_47;neuron_48;neuron_49;neuron_5;neuron_50;neuron_51;neuron_52;neuron_53;neuron_54;neuron_55;neuron_56;neuron_57;neuron_58;neuron_59;neuron_6;neuron_60;neuron_61;neuron_62;neuron_63;neuron_64;neuron_65;neuron_66;neuron_67;neuron_68;neuron_69;neuron_7;neuron_70;neuron_71;neuron_72;neuron_73;neuron_74;neuron_75;neuron_76;neuron_77;neuron_78;neuron_79;neuron_8;neuron_80;neuron_81;neuron_82;neuron_83;neuron_84;neuron_85;neuron_86;neuron_87;neuron_88;neuron_89;neuron_9;neuron_90;neuron_91;neuron_92;neuron_93;neuron_94;neuron_95;neuron_96;neuron_97;neuron_98;second_layer;top_snn,,,,,,,,
+C:/Users/rober/OneDrive/universita/anno2/tirocinio/fpga_implementation/project_1/project_1.srcs/sim_1/new/Neuron_TB.vhd,1687102990,vhdl,,,,neuron_tb,,,,,,,,
+C:/Users/rober/OneDrive/universita/anno2/tirocinio/fpga_implementation/project_1/project_1.srcs/sim_1/new/RAM_Block_TB.vhd,1687178885,vhdl,,,,ram_block_tb,,,,,,,,
+C:/Users/rober/OneDrive/universita/anno2/tirocinio/fpga_implementation/project_1/project_1.srcs/sim_1/new/Second_Layer_TB.vhd,1687224174,vhdl,,,,second_layer_tb,,,,,,,,
+C:/Users/rober/OneDrive/universita/anno2/tirocinio/fpga_implementation/project_1/project_1.srcs/sim_1/new/input_layer_tb.vhd,1687219147,vhdl,,,,input_layer_tb,,,,,,,,
+C:/Users/rober/OneDrive/universita/anno2/tirocinio/fpga_implementation/project_1/project_1.srcs/sim_1/new/input_neuron_tb.vhd,1687218542,vhdl,,,,input_neuron_tb,,,,,,,,
+C:/Users/rober/OneDrive/universita/anno2/tirocinio/fpga_implementation/project_1/project_1.srcs/sim_1/new/interp_tb.vhd,1687191083,vhdl,,,,interp_tb,,,,,,,,
+C:/Users/rober/OneDrive/universita/anno2/tirocinio/fpga_implementation/project_1/project_1.srcs/sim_1/new/pre_layer_tb.vhd,1687208496,vhdl,,,,pre_layer_tb,,,,,,,,
+C:/Users/rober/OneDrive/universita/anno2/tirocinio/fpga_implementation/project_1/project_1.srcs/sources_1/new/top_SNN_tb.vhd,1688025383,vhdl,,,,top_snn_tb,,,,,,,,
